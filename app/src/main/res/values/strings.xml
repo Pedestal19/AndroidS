@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Revcollect Enumerator</string>
+
+    <string name="sign_up_label">Sign Up</string>
+    <string name="log_in_label">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm_hint">Confirm Password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_homescreen">Homescreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="sc">Service Code</string>
+
+<!--    <string name="initial_auth_ep">http://192.168.16.156/api/v1/devices</string>
+    <string name="auth">http://192.168.16.156/api/v1/checkDeviceExist</string>
+    <string name="verifysync">http://192.168.16.156/api/v1/responseFromMobile</string>
+    <string name="mobilesync">http://192.168.16.156/api/v1/synchMobileToServer</string>
+
+    <string name="syncbuildingimages">http://192.168.16.156/api/v1/synchMobileBuildingImagesToServer</string>
+    <string name="syncbusinessimages">http://192.168.16.156/api/v1/synchMobileBussinessImagesToServer</string>-->
+    <string name="title_activity_search_taxpayer_widget">SearchTaxpayerWidget</string>
+    <string name="password_err">passwords have to match</string>
+    <string name="passwordcondition1">password should be at least 6 characters</string>
+
+    <string name="guest_auth_ep">http://veritextsa.com/api/v1/demodevices</string>
+     <string name="initial_auth_ep">http://veritextsa.com/api/v1/devices</string>
+    <string name="auth">http://veritextsa.com/api/v1/checkDeviceExist</string>
+    <string name="verifysync">http://veritextsa.com/api/v1/responseFromMobile</string>
+    <string name="mobilesync">http://veritextsa.com/api/v1/synchMobileToServer</string>
+
+    <string name="syncbuildingimages">http://veritextsa.com/api/v1/synchMobileBuildingImagesToServer</string>
+    <string name="syncbusinessimages">http://veritextsa.com/api/v1/synchMobileBussinessImagesToServer</string>
+
+</resources>

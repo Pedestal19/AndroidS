@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProperty"
+    android:id="@+id/layout_root"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:focusable="true"
+
+               >
+
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <EditText android:id="@+id/et_taxpayername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Taxpayer Name" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <EditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile Number"
+                            android:inputType="textEmailAddress" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <EditText android:id="@+id/et_emailaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email address" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Taxpayer Type:"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+
+
+                    <RadioGroup
+                        android:id="@+id/radioTaxPayerType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <RadioButton
+                            android:id="@+id/radioIndividual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Individual"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radioCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Company" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Economic Activity:"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+
+                    <RadioGroup
+                        android:id="@+id/radioEconomicActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioEmployed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Employed"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radioMultipleEmployer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Multiple Employer" />
+
+                        <RadioButton
+                            android:id="@+id/radioSelfEmployed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Self Employed"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+                <!-- <android.support.v7.widget.AppCompatButton
+                     android:id="@+id/btn_takeCoordinates"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="24dp"
+                     android:layout_marginBottom="24dp"
+                     android:padding="12dp"
+                     android:text="Take Co-ordinates"
+                     android:background="@drawable/my_button_bg2"
+
+
+                     />-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

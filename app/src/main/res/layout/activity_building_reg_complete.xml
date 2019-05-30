@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandRegComplete">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/auth_page_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Building Registration Complete"
+                    android:id="@+id/textView"
+                    android:textSize="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Land RIN"
+                    android:id="@+id/txtRIN"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please wait for notification message"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:allowUndo="false"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/auth_page_margin">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Apartment"
+                    android:id="@+id/btn_addbuilding"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/textView2"
+                    android:layout_alignEnd="@+id/textView2"
+                    android:background="@color/primary_darker"
+                    android:elegantTextHeight="false"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/auth_page_margin">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:id="@+id/btn_finish"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/textView2"
+                    android:layout_alignEnd="@+id/textView2"
+                    android:background="@color/primary_darker"
+                    android:elegantTextHeight="false"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

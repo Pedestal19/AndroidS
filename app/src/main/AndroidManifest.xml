@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hosanna_techvibes.revcollectenumerator">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PROFILE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".model.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GuestSignUp"
+            android:theme="@style/GuestSignup"></activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MyLogin.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddProperty"
+            android:label="Property Reg"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StreetList" />
+        </activity>
+        <activity
+            android:name=".StreetList"
+            android:label="Streets"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".LandRegComplete" />
+        <activity
+            android:name=".PropertyList"
+            android:label="Properties"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".BuildingList"
+            android:label="Buildings"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ApartmentList"
+            android:label="Apartments"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".BusinessList"
+            android:label="Businesses"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddBuilding"
+            android:label="Add Building"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PropertyList" />
+        </activity>
+        <activity android:name=".BuildingRegComplete" />
+        <activity
+            android:name=".AddApartment"
+            android:label="Add Apartment"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuildingList" />
+        </activity>
+        <activity android:name=".ApartmentRegComplete" />
+        <activity
+            android:name=".AddBusiness"
+            android:label="Add Business"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ApartmentList" />
+        </activity>
+        <activity android:name=".BusinessComplete" />
+        <activity
+            android:name=".Homescreen"
+            android:label="@string/title_activity_homescreen"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name=".Broadcaster.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+
+                <data android:scheme="package" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".CameraUseActivity"
+            android:label="Camera Use"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".PropertyList2"
+            android:label="Select a Property"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <!--
+           <meta-data
+           android:name="android.support.PARENT_ACTIVITY"
+           android:value=".ApartmentList" />
+            -->
+        </activity>
+        <activity
+            android:name=".BuildingList2"
+            android:label="Select a Building"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <!--
+           <meta-data
+           android:name="android.support.PARENT_ACTIVITY"
+           android:value=".ApartmentList" />
+            -->
+        </activity>
+        <activity
+            android:name=".ApartmentList2"
+            android:label="Select an Apartment"
+            android:theme="@style/AppTheme2">
+
+            <!-- create support for back button -->
+            <!--
+           <meta-data
+           android:name="android.support.PARENT_ACTIVITY"
+           android:value=".ApartmentList" />
+            -->
+        </activity>
+        <activity android:name=".SelectItems" />
+        <activity
+            android:name=".SearchTaxpayerWidget"
+            android:label="@string/title_activity_search_taxpayer_widget"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
