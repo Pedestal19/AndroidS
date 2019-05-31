@@ -184,7 +184,7 @@ public class CameraUseActivity extends AppCompatActivity {
 
 
                 }
-                if(app.getActiveActivity().getClass() == AddBusiness.class) {
+                else if(app.getActiveActivity().getClass() == AddBusiness.class) {
 
                     if(picData != null && picData.length > 0)
                     {

@@ -109,7 +109,7 @@ public class AddBusiness extends AppCompatActivity {
         SpiState.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
-                Toast.makeText(getApplicationContext(), " si ::"+selectedItem, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), " si ::"+selectedItem, Toast.LENGTH_SHORT).show();
                 populateLGATypeWithState(selectedItem);
             } // to close the onItemSelected
 
